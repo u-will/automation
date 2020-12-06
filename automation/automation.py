@@ -26,3 +26,7 @@ def find_email(unclean_file_path, clean_file_path):
   with open ("{clean_file_path}",'w' ) as file:
     for email in emails:
       file.write(email+'\n')
+ 
+if __name__ == "__main__":
+    find_email(assets/potential-contacts.txt assets/email.txt)
+    find_phone_number(assets/potential-contacts.txt assets/contacts.txt)
